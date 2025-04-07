@@ -16,7 +16,15 @@ connectCloudinary()
 
 // Middlewares
 app.use(express.json())
-app.use(cors())
+
+// CORS Configuration
+const corsOptions = {
+  origin: 'https://ecommerce-frontend-seven-liard.vercel.app', 
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+  credentials: true, 
+}
+
+app.use(cors(corsOptions))
 
 // API Endpoints
 app.use('/api/user', userRouter)
@@ -24,4 +32,4 @@ app.use('/api/product', productRouter)
 app.use('/api/cart', cartRouter)
 app.use('/api/order', orderRouter)
 
-app.listen(port, ()=> console.log('Server started on PORT : ' + port))
+app.listen(port, () => console.log('Server started on PORT : ' + port))
