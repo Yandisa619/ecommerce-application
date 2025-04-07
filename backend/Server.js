@@ -19,7 +19,7 @@ app.use(express.json())
 
 // CORS Configuration
 const corsOptions = {
-  origin: 'https://ecommerce-frontend-seven-liard.vercel.app', 
+  origin: 'https://ecommerce-front-theta-two.vercel.app/', 
   methods: ['GET', 'POST', 'PUT', 'DELETE'], 
   credentials: true, 
 }
