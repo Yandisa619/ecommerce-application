@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "apis": [
+    {
+      "identifier": "peachpayments",
+      "source": "@peachpayments/v1.0#4navtffm8cxke0w",
+      "integrity": "sha512-sqmwRUxlX3IF8B/cJqpMwyeCRjRN4phuZnx84Xjw0AOPUIns6qRk4TT94V3ItztBaN+dFEtl6jG1yHZ4QTGpyg==",
+      "installerVersion": "6.1.3"
+    }
+  ]
+}
